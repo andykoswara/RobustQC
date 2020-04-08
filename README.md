@@ -3,6 +3,8 @@ MATLAB codes to determine the robustness of quantum control systems as described
 
 The robust_amplitude_main.m file performs all the robustness calculations associated with the paper. It calls the input file containing parameters of the control field and various functions defined within the folder in order to generate outputs and their corresponding plots. 
 
+[](Images/robust_calc_test_mod_diffields_Pji_and_interf.jpg)
+
 Figure 2 can be obtained by running the robust_amplitude_main.m file at different sigmas and collecting the values of E[P_41] and E[interference] for plotting purposes. Note that the sigma (stdev) parameter is set in the input file “robust_calc_test_mod_field_[ind].mat” and this can be overwritten in the main file at the desired sigma values.
 
 The functions called in the main files have been updated with the latest descriptions, including its input, output and function definitions.
