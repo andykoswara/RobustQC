@@ -1,9 +1,9 @@
 # RobustQC
-MATLAB codes to determine the robustness of quantum control systems as described in 10.1103/PhysRevA.90.043414
+MATLAB codes to determine the robustness of quantum control systems as described in 10.1103/PhysRevA.90.043414. 
 
 The robust_amplitude_main.m file performs all the robustness calculations associated with the paper. It calls the input file containing parameters of the control field and various functions defined within the folder in order to generate outputs and their corresponding plots in the article.
 
-Specific details worth mentioning are as follows:
+Specific details worth mentioning for clarity are as follows:
 
 The following figure can be obtained by running the robust_amplitude_main.m file at different sigmas and collecting the values of E[P_41] and E[interference] for plotting purposes. Note that the sigma (stdev) parameter is set in the input file “robust_calc_test_mod_field_[ind].mat” and this can be overwritten in the main file at the desired sigma values.
 
@@ -30,6 +30,6 @@ The results of the robustness analysis obtained from running robust_amplitude_ma
 
 ![](Images/Robust_calc_test_mod_field_1_vs_8_field_poptranfer_sigma0pt675.jpg)
 
-Table IV corresponds to output values of the robust_amplitude_main.m file, which are also displayed at the end of each run which respect to an instance of sigma.
+Table IV in the paper corresponds to output values of the robust_amplitude_main.m file, which are also displayed at the end of each run which respect to an instance of sigma.
 
 ![](Images/Table4.png)
