@@ -22,12 +22,14 @@ In addition, the file includes calculations of data concerning:
 
 The files containing the control field parameters are given in the format “robust_calc_test_mod_field_[ind].mat”, where [ind] corresponds to indices of the field listed in Table II. Note that many of the examples uses input file with ind=1 and 8.
 
-![](robust_calc_test_mod_diffields_nonunisigma_pjiexp_interfexp.jpg)
+![](Images/robust_calc_test_mod_diffields_nonunisigma_pjiexp_interfexp.jpg)
 
 The figure above can be obtained in the same way as the previous figure but, in this case, only the sigma of the second amplitude mode is varied while the other is kept at 0.3 as noted in the article.
 
 The results of the robustness analysis obtained from running robust_amplitude_main.m file is called by poptransfer.m file to generate plot of control field and population transfer corresponding to the figure below.
 
-![](Robust_calc_test_mod_field_1_vs_8_field_poptranfer_sigma0pt675.jpg)
+![](Images/Robust_calc_test_mod_field_1_vs_8_field_poptranfer_sigma0pt675.jpg)
 
-Table IV corresponds to output values of the robust_amplitude_main.m file, which are also displayed at the end of each run which respect to an instance of sigma. 
+Table IV corresponds to output values of the robust_amplitude_main.m file, which are also displayed at the end of each run which respect to an instance of sigma.
+
+![](Images/Table4.png)
