@@ -1,5 +1,5 @@
 # RobustQC
-MATLAB codes to determine the robustness of quantum control systems as described in 10.1103/PhysRevA.90.043414. 
+MATLAB codes to determine the robustness of quantum control systems as described in DOI:10.1103/PhysRevA.90.043414. 
 
 The robust_amplitude_main.m file performs all the robustness calculations associated with the paper. It calls the input file containing parameters of the control field and various functions defined within the folder in order to generate outputs and their corresponding plots in the article.
 
