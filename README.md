@@ -1,11 +1,13 @@
 # RobustQC
 MATLAB codes to determine the robustness of quantum control systems as described in 10.1103/PhysRevA.90.043414
 
-The robust_amplitude_main.m file performs all the robustness calculations associated with the paper. It calls the input file containing parameters of the control field and various functions defined within the folder in order to generate outputs and their corresponding plots. 
+The robust_amplitude_main.m file performs all the robustness calculations associated with the paper. It calls the input file containing parameters of the control field and various functions defined within the folder in order to generate outputs and their corresponding plots in the article.
 
-[](Images/robust_calc_test_mod_diffields_Pji_and_interf.jpg)
+Specific details worth mentioning are as follows:
 
-Figure 2 can be obtained by running the robust_amplitude_main.m file at different sigmas and collecting the values of E[P_41] and E[interference] for plotting purposes. Note that the sigma (stdev) parameter is set in the input file “robust_calc_test_mod_field_[ind].mat” and this can be overwritten in the main file at the desired sigma values.
+The following figure can be obtained by running the robust_amplitude_main.m file at different sigmas and collecting the values of E[P_41] and E[interference] for plotting purposes. Note that the sigma (stdev) parameter is set in the input file “robust_calc_test_mod_field_[ind].mat” and this can be overwritten in the main file at the desired sigma values.
+
+![](Images/robust_calc_test_mod_diffields_Pji_and_interf.jpg)
 
 The functions called in the main files have been updated with the latest descriptions, including its input, output and function definitions.
 
@@ -20,8 +22,12 @@ In addition, the file includes calculations of data concerning:
 
 The files containing the control field parameters are given in the format “robust_calc_test_mod_field_[ind].mat”, where [ind] corresponds to indices of the field listed in Table II. Note that many of the examples uses input file with ind=1 and 8.
 
-Figure 5 can be obtained in the same way as Figure 2 but, in this case, only the sigma of the second amplitude mode is varied while the other is kept at 0.3 as noted in the paper.
+![](robust_calc_test_mod_diffields_nonunisigma_pjiexp_interfexp.jpg)
 
-The results of the robustness analysis obtained from running robust_amplitude_main.m file is called by poptransfer.m file to generate plot of control field and population transfer corresponding to Figure 6.
+The figure above can be obtained in the same way as the previous figure but, in this case, only the sigma of the second amplitude mode is varied while the other is kept at 0.3 as noted in the article.
+
+The results of the robustness analysis obtained from running robust_amplitude_main.m file is called by poptransfer.m file to generate plot of control field and population transfer corresponding to the figure below.
+
+![](Robust_calc_test_mod_field_1_vs_8_field_poptranfer_sigma0pt675.jpg)
 
 Table IV corresponds to output values of the robust_amplitude_main.m file, which are also displayed at the end of each run which respect to an instance of sigma. 
