@@ -1,7 +1,7 @@
 # RobustQC
 MATLAB codes to determine the robustness of quantum control systems as described in https://doi.org/10.1103/PhysRevA.90.043414. 
 
-## Output
+## Output of Main File
 The robust_amplitude_main.m file performs all the robustness calculations associated with the paper. It calls the input file containing parameters of the control field and various functions defined within the folder in order to generate outputs and their corresponding plots in the article.
 
 ```matlab
@@ -81,18 +81,6 @@ time elapsed in simulated robustness: 9.1738
 \alpha: [0, 2, 0] \gamma: 47 |U_ji(T,\gamma)|^2: 0.013995
 \alpha: [0, 2, 2] \gamma: 49 |U_ji(T,\gamma)|^2: 0.015767
 \alpha: [0, 2, 4] \gamma: 51 |U_ji(T,\gamma)|^2: 0.0035249
-\alpha: [1, 0, 1] \gamma: 531 |U_ji(T,\gamma)|^2: 1.0465
-\alpha: [1, 0, 3] \gamma: 533 |U_ji(T,\gamma)|^2: 0.40401
-\alpha: [1, 0, 5] \gamma: 535 |U_ji(T,\gamma)|^2: 0.04839
-\alpha: [1, 0, 7] \gamma: 537 |U_ji(T,\gamma)|^2: 0.0028708
-\alpha: [1, 1, 0] \gamma: 553 |U_ji(T,\gamma)|^2: 0.17035
-\alpha: [1, 1, 2] \gamma: 555 |U_ji(T,\gamma)|^2: 0.1853
-\alpha: [1, 1, 4] \gamma: 557 |U_ji(T,\gamma)|^2: 0.036093
-\alpha: [1, 1, 6] \gamma: 559 |U_ji(T,\gamma)|^2: 0.0029225
-\alpha: [1, 2, 1] \gamma: 577 |U_ji(T,\gamma)|^2: 0.031235
-\alpha: [1, 2, 3] \gamma: 579 |U_ji(T,\gamma)|^2: 0.013958
-\alpha: [1, 2, 5] \gamma: 581 |U_ji(T,\gamma)|^2: 0.0018283
-\alpha: [1, 3, 2] \gamma: 601 |U_ji(T,\gamma)|^2: 0.0019865
 ...
 \alpha: [6, 0, 0] \gamma: 3175 |U_ji(T,\gamma)|^2: 0.0078935
 \alpha: [6, 0, 2] \gamma: 3177 |U_ji(T,\gamma)|^2: 0.0098529
@@ -129,16 +117,14 @@ In addition, the file includes calculations of data concerning:
 3. Display of the significant encoded pathways, and 
 4. The difference between moment- and sampled-calculations.
 
-The files containing the control field parameters are given in the format “robust_calc_test_mod_field_[ind].mat”, where [ind] corresponds to indices of the field listed in Table II. Note that many of the examples uses input file with ind=1 and 8.
+The files containing the control field parameters are given in the format “robust_calc_test_mod_field_[ind].mat”, where [ind] corresponds to indices of the field listed in Table II. Many of the examples use input file with ind=1 and 8.
 
 ![](Images/robust_calc_test_mod_diffields_nonunisigma_pjiexp_interfexp.jpg)
 
-The figure 5 above can be obtained in the same way as the previous figure but, in this case, only the sigma of the second amplitude mode is varied while the other is kept at 0.3 as noted in the article.
-
-The results of the robustness analysis obtained from running robust_amplitude_main.m file is called by poptransfer.m file to generate plot of control field and population transfer corresponding to the figure 6 below.
+The figure 5 above can be obtained in the same way as the previous figure but, in this case, only the sigma of the second amplitude mode is varied while the other is kept at 0.3 as noted in the article. The results of the robustness analysis obtained from running robust_amplitude_main.m file is called by poptransfer.m file to generate plot of control field and population transfer corresponding to the figure 6 below.
 
 ![](Images/Robust_calc_test_mod_field_1_vs_8_field_poptranfer_sigma0pt675.jpg)
 
-Table 4 in the paper corresponds to output values of the robust_amplitude_main.m file, which are also displayed at the end of each run which respect to an instance of sigma.
+Table 4 in the paper corresponds to output values of the robust_amplitude_main.m file, which are also displayed at the end of each run in the MATLAB terminal with respect to an instance of sigma.
 
 ![](Images/Table4.png)
