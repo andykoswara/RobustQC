@@ -1,7 +1,19 @@
 # RobustQC
 MATLAB scripts to determine the robustness of quantum control systems as described in https://doi.org/10.1103/PhysRevA.90.043414. 
 
-## Output of Main File
+## Table of Contents
+
+- [Dependencies](#Dependencies)
+- [Output](#Output)
+- [Special Notes](#Special-Notes)
+
+## Dependencies
+
+```ruby
+MATLAB_2015Ra
+```
+
+## Output
 The robust_amplitude_main.m file performs all the robustness calculations associated with the paper. It calls the input file containing parameters of the control field and various functions defined within the folder in order to generate outputs and their corresponding plots in the article.
 
 ```matlab
@@ -91,7 +103,7 @@ time elapsed in simulated robustness: 9.1738
 \alpha: [7, 0, 3] \gamma: 3707 |U_ji(T,\gamma)|^2: 0.0012107
 >> 
 ```
-| First Moment of amplitude modes | Dyson terms (nominal)|
+| first moment of amplitude modes | Dyson terms (nominal)|
 |---------|---------|
 |![](Images/output_fig1.png)|![](Images/output_fig2.png)|
 
