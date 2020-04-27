@@ -91,13 +91,17 @@ time elapsed in simulated robustness: 9.1738
 \alpha: [7, 0, 3] \gamma: 3707 |U_ji(T,\gamma)|^2: 0.0012107
 >> 
 ```
-| figure 1| figure 2| figure 3|
-|---------|---------|---------|
-|![](Images/output_fig1.png)|![](Images/output_fig2.png)|![](Images/output_fig3.png)|
+| figure 1| figure 2|
+|---------|---------|
+|![](Images/output_fig1.png)|![](Images/output_fig2.png)|
 
-| figure 4| figure 5| figure 6|
-|---------|---------|---------|
-|![](Images/output_fig4.png)|![](Images/output_fig5.png)|![](Images/output_fig6.png)|
+| figure 3| figure 4|
+|---------|---------|
+|![](Images/output_fig3.png)|![](Images/output_fig4.png)|
+
+| figure 5| figure 6| 
+|---------|---------|
+|![](Images/output_fig5.png)|![](Images/output_fig6.png)|
 
 ## Special Notes
 Specific details associated with the paper and worth mentioning for clarity are as follows:
