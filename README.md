@@ -1,6 +1,3 @@
-# RobustQC
-MATLAB scripts to determine the robustness of quantum control systems as described in https://doi.org/10.1103/PhysRevA.90.043414. 
-
 ## Table of Contents
 
 - [Dependencies](#Dependencies)
